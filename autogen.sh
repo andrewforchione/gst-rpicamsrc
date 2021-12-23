@@ -8,7 +8,7 @@ autoreconf --verbose --force --install || {
  exit 1;
 }
 
-./configure || {
+./configure --disable-dependency-tracking || {
  echo 'configure failed';
  exit 1;
 }
